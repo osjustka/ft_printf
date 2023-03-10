@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/08 11:04:32 by marvin            #+#    #+#              #
-#    Updated: 2023/03/08 11:04:32 by marvin           ###   ########.fr        #
+#    Updated: 2023/03/10 09:38:18 by jkabelko         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC		=	ft_printf.c \
 
 NAME		=	libftprintf.a
 
-CC		=	gcc
+CC		=	cc
 
 CFLAGS		=	-Wall -Wextra -Werror
 
@@ -33,7 +33,6 @@ LINK		=	ar rcs
 RM			= 	rm -rf
 
 $(NAME):	$(OBJS)
-		$(CC) $(CFLAGS) $(INCLUDES) $(SRC)
 		$(LINK) $(NAME) $(OBJS)
 
 ft_printf.o: ft_printf.c ft_printf.h
