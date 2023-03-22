@@ -18,7 +18,7 @@ void	ft_putstr_pf(char *s, size_t *ch_printed)
 
 	i = 0;
 	if (s == NULL)
-		return ;
+		s = "(null)";
 	while (s[i] != '\0')
 	{
 		ft_putchar_pf(s[i], ch_printed);

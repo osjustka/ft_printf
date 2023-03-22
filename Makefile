@@ -6,7 +6,7 @@
 #    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/08 11:04:32 by marvin            #+#    #+#              #
-#    Updated: 2023/03/10 09:38:18 by jkabelko         ###   ########.fr        #
+#    Updated: 2023/03/08 11:04:32 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC		=	ft_printf.c \
 
 NAME		=	libftprintf.a
 
-CC		=	cc
+CC		=	gcc
 
 CFLAGS		=	-Wall -Wextra -Werror
 

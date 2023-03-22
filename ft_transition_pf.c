@@ -14,7 +14,7 @@
 
 size_t ft_strlen_pf(const char *s)
 {
-    size_t	len;
+	size_t	len;
 	char	*base;
 
 	len = 0;
@@ -59,7 +59,7 @@ void    *ft_calloc_pf(size_t n, size_t size)
 {
     void    *str;
 
-    str =(char *) malloc (n * size);
+    str = malloc (n * size);
     if (str == NULL)
         return (NULL);
     ft_bzero_pf(str, n * size);
@@ -75,9 +75,9 @@ char	*ft_transition_pf(unsigned long long n, char *base)
 	n_lenght = ft_numlen_pf(n, base);
 	b_lenght = ft_strlen_pf(base);
 	str = ft_calloc_pf((n_lenght + 1), sizeof(char));
-	if (*str == '\0')
+	if (str == 0)
 		return (NULL);
-	while (n_lenght != '\0')
+	while (n_lenght != 0)
 	{
 		n_lenght = n_lenght - 1;
 		str[n_lenght] = base[n % b_lenght];
